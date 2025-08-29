@@ -1,0 +1,67 @@
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col">
+      {/* Hero Section */}
+      <header className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Consiga Mais Clientes em 7 Dias
+        </h1>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto">
+          Sem gastar fortunas em agências de marketing. O <strong>Clientes Agora</strong> cria um plano pronto e prático para atrair clientes no seu negócio.
+        </p>
+        <button className="mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-500 transition">
+          Quero Conseguir Clientes Agora
+        </button>
+      </header>
+
+      {/* Como funciona */}
+      <section className="py-16 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-10">Como Funciona?</h2>
+        <div className="grid md:grid-cols-3 gap-8 text-center">
+          <div className="p-6 bg-gray-50 rounded-2xl shadow">
+            <h3 className="text-xl font-semibold mb-2">1. Informe Seu Negócio</h3>
+            <p>Escolha se você tem um salão, restaurante, loja de roupas ou outro negócio local.</p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-2xl shadow">
+            <h3 className="text-xl font-semibold mb-2">2. Receba Seu Plano</h3>
+            <p>Você recebe um plano de 7 dias com posts prontos, ideias de anúncios e checklist simples.</p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-2xl shadow">
+            <h3 className="text-xl font-semibold mb-2">3. Aplique e Venda</h3>
+            <p>Coloque em prática o plano e veja novos clientes chegando sem complicação.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Prova social */}
+      <section className="py-16 px-6 bg-gray-100">
+        <h2 className="text-3xl font-bold text-center mb-10">Quem Já Usou, Recomenda</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          <blockquote className="p-6 bg-white rounded-2xl shadow">
+            <p>“Apliquei o plano no meu salão de beleza e consegui 12 clientes novos em apenas uma semana!”</p>
+            <footer className="mt-4 text-sm text-gray-600">— Carla M., dona de salão</footer>
+          </blockquote>
+          <blockquote className="p-6 bg-white rounded-2xl shadow">
+            <p>“Tenho uma pizzaria e finalmente consegui divulgar no Instagram sem dor de cabeça. Funcionou muito!”</p>
+            <footer className="mt-4 text-sm text-gray-600">— João P., pizzaiolo</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Oferta */}
+      <section className="py-16 px-6 max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6">Invista Pouco, Ganhe Muito</h2>
+        <p className="text-lg mb-6">Apenas <span className="font-bold text-green-600">R$47</span> por acesso vitalício ao plano completo.</p>
+        <p className="text-gray-600 mb-6">Bônus: garantia de 7 dias ou seu dinheiro de volta.</p>
+        <button className="px-8 py-4 bg-green-500 text-white font-semibold rounded-2xl shadow-lg hover:bg-green-600 transition">
+          Comprar Agora
+        </button>
+      </section>
+
+      {/* Rodapé */}
+      <footer className="py-8 text-center text-sm text-gray-500 border-t">
+        © {new Date().getFullYear()} Clientes Agora. Todos os direitos reservados.
+      </footer>
+    </div>
+  );
+}
